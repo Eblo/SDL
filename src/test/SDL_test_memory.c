@@ -25,6 +25,11 @@
 #include "SDL_test_crc32.h"
 #include "SDL_test_memory.h"
 
+
+#ifdef TARGET_OS_IOS
+#undef HAVE_LIBUNWIND_H
+#endif
+
 #ifdef HAVE_LIBUNWIND_H
 #include <libunwind.h>
 #endif

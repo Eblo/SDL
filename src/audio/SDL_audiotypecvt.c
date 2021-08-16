@@ -25,7 +25,7 @@
 #include "SDL_cpuinfo.h"
 #include "SDL_assert.h"
 
-#ifdef __ARM_NEON
+#if 0 //__ARM_NEON
 #define HAVE_NEON_INTRINSICS 1
 #endif
 

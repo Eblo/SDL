@@ -1022,6 +1022,8 @@ SDL_EGL_CreateContext(_THIS, EGLSurface egl_surface)
 
     attribs[attr++] = EGL_NONE;
 
+    SDL_EGL_ChooseConfig(_this);
+
     /* Bind the API */
     if (profile_es) {
         _this->egl_data->apitype = EGL_OPENGL_ES_API;

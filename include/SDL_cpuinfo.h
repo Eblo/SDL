@@ -68,7 +68,7 @@ _m_prefetch(void *__P)
 #endif
 #elif defined(__MINGW64_VERSION_MAJOR)
 #include <intrin.h>
-#if !defined(SDL_DISABLE_ARM_NEON_H) && defined(__ARM_NEON)
+#if !defined(__linux__) && !defined(SDL_DISABLE_ARM_NEON_H) && defined(__ARM_NEON)
 #  include <arm_neon.h>
 #endif
 #else
